@@ -24,6 +24,9 @@ profile.cov
 go.work
 go.work.sum
 
+# Go vendored submodules
+vendor/
+
 # env file
 .env
 
