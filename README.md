@@ -37,9 +37,16 @@ net.ipv4.ping_group_range = 1	0
 
 The binary which uses this library needs to have Effective and Permitted capabilities added for `cap_net_raw`,
 for using RAW and PACKET sockets:
-https://man7.org/linux/man-pages/man7/cap_text_formats.7.html
-https://man7.org/linux/man-pages/man7/capabilities.7.html
+* https://man7.org/linux/man-pages/man7/cap_text_formats.7.html
+* https://man7.org/linux/man-pages/man7/capabilities.7.html
 
 ```bash
 sudo setcap cap_net_raw=+ep <path_to_binary>
 ```
+
+## Contributing
+
+Please use the [commit template](.github/commit_template.md) when committing to keep commit messages consistent.
+
+Commits should be based on an open Jira ticket, which can be opened here: https://inf0rmatiker.atlassian.net/jira/software/projects/CPROD/boards
+A Jira ticket will generate a ticket key "CPROD-X", use this in the commit summary to tie commits to tickets.
